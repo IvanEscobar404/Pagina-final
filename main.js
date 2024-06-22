@@ -41,4 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
         
         moviesContainer.appendChild(movieElement);
     });
+
+    //Funcionalida para abrir el form de contacto en una nueva pestaña
+    const contactButton = document.getElementById('contactButton');
+    contactButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.open('form.html', '_blank')
+    });
 });
