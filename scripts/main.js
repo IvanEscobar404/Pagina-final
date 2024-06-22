@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const moviesContainer = document.getElementById("movies-container");
 
   movies.forEach((movie) => {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     moviesContainer.appendChild(movieElement);
   });
 
-  //Funcionalida para abrir el form de contacto en una nueva pestaña
+  //Funcionalidad para abrir el form de contacto en una nueva pestaña
   const contactButton = document.getElementById("contactButton");
   contactButton.addEventListener("click", function (event) {
     event.preventDefault();
