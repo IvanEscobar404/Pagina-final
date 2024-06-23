@@ -12,7 +12,7 @@ body {
 
 .contact_form {
   width: 460px;
-  height: auto;
+  max-width: 100%;
   margin: 80px auto;
   border-radius: 10px;
   padding-top: 30px;
@@ -27,6 +27,7 @@ input {
   background-color: #fbfbfb;
   width: 408px;
   height: 40px;
+  max-width: 100%;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
@@ -40,6 +41,7 @@ textarea {
   background-color: #fbfbfb;
   width: 405px;
   height: 150px;
+  max-width: 100%;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
@@ -143,4 +145,22 @@ p {
 .btn-violeta:hover {
   background-color: #9b4eff;
   border: 1px solid #d3b2ff;
+}
+
+@media screen and (max-width: 600px) {
+  .contact_form {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
 }
