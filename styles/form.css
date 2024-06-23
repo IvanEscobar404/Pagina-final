@@ -59,8 +59,8 @@ button {
   height: 45px;
   padding-left: 5px;
   padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
   text-transform: uppercase;
   background-color: #ab4493;
   border-color: #ab4493;
@@ -121,4 +121,26 @@ p {
 .formulario textarea:focus {
   outline: 0;
   border: 1px solid #d73ab2;
+}
+
+/* Boton para volver atras */
+.btn-violeta {
+  background-color: #d3b2ff; /* Violeta claro */
+  color: white;
+  padding: 5px 10px; /* Tamaño más pequeño */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.btn-violeta p {
+  margin: 0;
+}
+
+.btn-violeta:hover {
+  background-color: #9b4eff;
+  border: 1px solid #d3b2ff;
 }

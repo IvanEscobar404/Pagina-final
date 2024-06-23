@@ -16,8 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //Funcionalidad para abrir el form de contacto en una nueva pestaña
   const contactButton = document.getElementById("contactButton");
-  contactButton.addEventListener("click", function (event) {
-    event.preventDefault();
-    window.open("form.html", "_blank");
+  contactButton.addEventListener("click", (e) => {
+    window.location.href = "form.html";
+  });
+  //Funcionalidad "volver atrás" con elbotón del formulario.
+  const volverAtras = document.getElementById("btn-volver-atras");
+  volverAtras.addEventListener("click", (e) => {
+    window.location.href = "index.html";
   });
 });
