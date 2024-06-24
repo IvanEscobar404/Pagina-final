@@ -1,172 +1,63 @@
-/* Importación de fuente */
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 body {
-  font-family: "Lexend";
-  margin: 0;
-  padding: 0;
+  font-family: "Lexend", sans-serif;
   background-color: #f0f0f0;
   background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.418) 0%),
     url(/images/91Vc9Z6KYKL._AC_SL1500_.jpg);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
 
 .contact_form {
-  display: flex;
-  width: 460px;
-  max-width: 100%;
-  margin: 80px auto;
-  border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
   background-color: #fbfbfb;
-  padding-left: 30px;
-  justify-content: center;
+  border-radius: 10px;
   box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.79);
 }
 
-input {
-  background-color: #fbfbfb;
-  width: 408px;
-  height: 40px;
-  max-width: 100%;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #ab4493;
-  margin-top: 10px;
-  padding-left: 10px;
+h1 {
+  font-size: 35px;
+  color: #ab4493;
+  text-align: center;
   margin-bottom: 20px;
 }
 
-textarea {
-  background-color: #fbfbfb;
-  width: 405px;
-  height: 150px;
-  max-width: 100%;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #ab4493;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px;
-  resize: none;
+h3 {
+  font-size: 16px;
+  color: #0e0e0e;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 label {
-  display: block;
-  float: center;
+  color: #0e0e0e;
 }
 
-button {
-  height: 45px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  text-transform: uppercase;
-  background-color: #ab4493;
-  border-color: #ab4493;
-  border-style: solid;
+.btn-violeta {
+  background-color: #d3b2ff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
   border-radius: 10px;
-  width: 420px;
   cursor: pointer;
-  transition: all ease-in-out 0.5s;
+  font-size: 14px;
 }
 
-button p {
-  color: #fff;
-}
-
-button:hover {
-  background-color: #5b234e;
-}
-
-span {
-  color: #ab4493;
+.btn-violeta:hover {
+  background-color: #9b4eff;
 }
 
 .aviso {
   font-size: 13px;
   color: #0e0e0e;
+  text-align: center;
+  margin-top: 10px;
 }
 
-h1 {
-  font-size: 35px;
-  padding-bottom: 20px;
-  color: #ab4493;
-}
-
-h3 {
-  font-size: 16px;
-  padding-bottom: 30px;
-  color: #0e0e0e;
-}
-
-p {
-  font-size: 14px;
-  color: #0e0e0e;
-}
-
-::-webkit-input-placeholder {
-  color: #a8a8a8;
-}
-
-::-webkit-textarea-placeholder {
-  color: #a8a8a8;
-}
-
-.formulario input:focus {
-  outline: 0;
-  border: 1px solid #d73ab2;
-}
-
-.formulario textarea:focus {
-  outline: 0;
-  border: 1px solid #d73ab2;
-}
-
-/* Boton para volver atras */
-.btn-violeta {
-  background-color: #d3b2ff; /* Violeta claro */
-  color: white;
-  padding: 5px 10px; /* Tamaño más pequeño */
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  display: inline-block;
-  margin-top: 5px;
-  font-size: 14px;
-}
-
-.btn-violeta p {
-  margin: 0;
-}
-
-.btn-violeta:hover {
-  background-color: #9b4eff;
-  border: 1px solid #d3b2ff;
-}
-
-@media screen and (max-width: 600px) {
-  .contact_form {
-    width: 90%;
-    margin: 50px auto;
-    padding: 20px;
-  }
-
-  input,
-  textarea {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  button {
-    width: 100%;
-  }
-
-  .btn-violeta {
-    width: 50%; /* La mitad del 100% en pantallas pequeñas */
-  }
+.text-danger {
+  color: #dc3545;
 }

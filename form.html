@@ -3,82 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- conexión del form.css -->
-    <link rel="stylesheet" href="/styles/form.css" />
-
     <title>Formulario Contacto</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="/styles/form.css" />
   </head>
-
   <body>
-    <div class="contact_form">
-      <div class="formulario">
-        <h1>Formulario de contacto</h1>
-        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
-        <form action="submeter-formulario.php" method="post">
-          <p>
-            <label for="nombre" class="colocar_nombre"
-              >Nombre
-              <span class="obligatorio">*</span>
-            </label>
-            <input
-              type="text"
-              name="introducir_nombre"
-              id="nombre"
-              required="obligatorio"
-              placeholder="Escribe tu nombre"
-            />
-          </p>
-          <p>
-            <label for="email" class="colocar_email"
-              >Email
-              <span class="obligatorio">*</span>
-            </label>
-            <input
-              type="email"
-              name="introducir_email"
-              id="email"
-              required="obligatorio"
-              placeholder="Escribe tu Email"
-            />
-          </p>
-          <p>
-            <label for="telefone" class="colocar_telefono">Teléfono </label>
-            <input
-              type="tel"
-              name="introducir_telefono"
-              id="telefono"
-              placeholder="Escribe tu teléfono"
-            />
-            <label for="mensaje" class="colocar_mensaje"
-              >Mensaje
-              <span class="obligatorio">*</span>
-            </label>
-            <textarea
-              name="introducir_mensaje"
-              class="texto_mensaje"
-              id="mensaje"
-              required="obligatorio"
-              placeholder="Deja aquí tu comentario..."
-            ></textarea>
-          </p>
-          <button type="submit" name="enviar_formulario" id="enviar">
-            <p>Enviar</p>
-          </button>
-          <!-- Nuevo botón Volver atrás -->
-          <button
-            type="button"
-            onclick="history.back()"
-            style="margin-top: 10px"
-            class="btn-violeta"
-            id="btn-volver-atras"
-          >
-            <p>Volver atrás</p>
-          </button>
-          <p class="aviso">
-            <span class="obligatorio"> * </span>los campos son obligatorios.
-          </p>
-        </form>
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+          <div class="card shadow">
+            <div class="card-body">
+              <h1 class="card-title text-center">Formulario de contacto</h1>
+              <h3 class="card-subtitle mb-4 text-muted text-center">
+                Escríbenos y en breve nos pondremos en contacto contigo
+              </h3>
+              <form action="submeter-formulario.php" method="post">
+                <div class="form-group">
+                  <label for="nombre"
+                    >Nombre <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    name="introducir_nombre"
+                    placeholder="Escribe tu nombre"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email"
+                    >Email <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="introducir_email"
+                    placeholder="Escribe tu Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Teléfono</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="telefono"
+                    name="introducir_telefono"
+                    placeholder="Escribe tu teléfono"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="mensaje"
+                    >Mensaje <span class="text-danger">*</span></label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="mensaje"
+                    name="introducir_mensaje"
+                    rows="5"
+                    placeholder="Deja aquí tu comentario..."
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-block"
+                  name="enviar_formulario"
+                >
+                  Enviar
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-block mt-3"
+                  onclick="history.back()"
+                >
+                  Volver atrás
+                </button>
+                <p class="text-muted text-center mt-3">
+                  <span class="text-danger">*</span> Los campos son
+                  obligatorios.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Bootstrap JS y dependencias opcionales -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
