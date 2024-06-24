@@ -1,67 +1,81 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
 }
 
-.centered-navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.centered-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.navbar-nav{
-    flex-direction: row;
-}
-
-.navegation{
-    position: sticky;
-    width: 100%;
-    top: 0;
-    z-index: 5;
+.navbar-nav {
+  flex-direction: row;
 }
 
-.nav-item{ /*Items HOME CONTACTO Y MENU DESPLEGABLE*/
-    margin: 0 1em;
+.navegation {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 5;
 }
 
-.movies-container { /*Container para las tarjetas de peliculas*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2em;
+.nav-item {
+  /*Items HOME CONTACTO Y MENU DESPLEGABLE*/
+  margin: 0 1em;
+}
+
+.movies-container {
+  /*Container para las tarjetas de peliculas*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em;
 }
 
 .movie {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    margin: 1em;
-    max-width: 200px;
-    padding: 1em;
-    text-align: center;
-    transition: transform 0.2s;
-    cursor: pointer;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 1em;
+  max-width: 200px;
+  padding: 1em;
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: pointer;
 }
 
 .movie img {
-    border-radius: 8px;
-    max-width: 100%;
+  border-radius: 8px;
+  max-width: 100%;
 }
 
 .movie:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-.pagination{
-    display: flex;
-    justify-content: right;
-    padding-right: 4rem;
+.pagination {
+  display: flex;
+  justify-content: right;
+  padding-right: 4rem;
+}
+
+/* tamaño del carrusel */
+.custom-carousel {
+  max-width: 800px; /* Ajusta este valor según tus necesidades */
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+}
+
+.custom-carousel .carousel-item img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
