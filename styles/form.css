@@ -10,31 +10,30 @@ body {
   padding: 0;
 }
 
-.contact_form {
-  margin: 50px auto;
+.container {
+  margin-top: 50px;
+}
+
+.card {
   max-width: 600px;
-  padding: 20px;
-  background-color: #fbfbfb;
   border-radius: 10px;
   box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.79);
 }
 
-h1 {
+.card-title {
   font-size: 35px;
   color: #ab4493;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
-h3 {
+.card-subtitle {
   font-size: 16px;
   color: #0e0e0e;
-  text-align: center;
   margin-bottom: 30px;
 }
 
-label {
-  color: #0e0e0e;
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ab4493;
 }
 
 .btn-violeta {
