@@ -11,6 +11,7 @@ body {
 }
 
 .contact_form {
+  display: flex;
   width: 460px;
   max-width: 100%;
   margin: 80px auto;
@@ -50,6 +51,7 @@ textarea {
   padding-left: 10px;
   margin-bottom: 20px;
   padding-top: 15px;
+  resize: none;
 }
 
 label {
@@ -162,5 +164,9 @@ p {
 
   button {
     width: 100%;
+  }
+
+  .btn-violeta {
+    width: 50%; /* La mitad del 100% en pantallas pequeñas */
   }
 }
