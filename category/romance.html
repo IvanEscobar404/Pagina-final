@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Romance</title>
-    <!-- CSS Bootstrap -->
+    <title>Peliculas | Todo</title>
+    <link rel="stylesheet" href="/styles/styles.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,10 +13,131 @@
     />
   </head>
   <body>
-    <!-- JS bootstrap -->
+    <header>
+      <h1>PELÍCULAS</h1>
+    </header>
+
+    <main>
+      <div class="navigation">
+        <!--BARRA DE NAVEGACION -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--MENU DESPLEGABLE -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><i class="fa-solid fa-house-chimney"></i> Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="contactButton"
+                    ><i class="fa-solid fa-address-book"></i> Contacto</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="categoriaDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- SUBMENUS -->
+                    <i class="fa-solid fa-layer-group"></i> Categoria</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="categoriaDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="Todos"
+                        ><i class="fa-solid fa-film"></i> Todos</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="Accion"
+                        ><i class="fa-solid fa-gun"></i> Acción</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="Comedia"
+                        ><i class="fa-solid fa-face-grin-squint-tears"></i>
+                        Comedia</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="Romance"
+                        ><i class="fa-solid fa-heart"></i> Romance</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="Romance"
+                        ><i class="fa-solid fa-masks-theater"></i> Drama</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- PAGINACION -->
+      <div id="movies-container" class="movies-container"></div>
+
+    </main>
+
+    <!-- Incluyendo Bootstrap JS y Popper.js -->
     <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz4fnFO9gybBh8aIhcxPLF8ZL9N1ceoHlmx9h5RYpTTI5SRZ6koM8mXK5Z"
+      crossorigin="anonymous"
+    ></script>
+    <scrip
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- conexión de los scripts -->
+    <script src="/scripts/category-main.js"></script>
+    <script src="/scripts/Filtro.js"></script>
+    <script src="/scripts/BD-Movies.js"></script>
+
+    <!-- conexión a los iconos de Icons Awesome -->
+    <script
+      src="https://kit.fontawesome.com/92729c3c84.js"
       crossorigin="anonymous"
     ></script>
   </body>
