@@ -16,10 +16,9 @@
     <header>
       <h1>PELÍCULAS</h1>
     </header>
-  
-    <main>
 
-      <div class="navigation"> 
+    <main>
+      <div class="navigation">
         <!--BARRA DE NAVEGACION -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
@@ -31,19 +30,21 @@
               aria-controls="navbarNavDropdown"
               aria-expanded="false"
               aria-label="Toggle navigation"
-              >
+            >
               <span class="navbar-toggler-icon"></span>
-            </button> 
+            </button>
             <!--MENU DESPLEGABLE -->
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#"
-                    ><i class="fa-solid fa-house-chimney"></i> Home</a>
+                    ><i class="fa-solid fa-house-chimney"></i> Home</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#" id="contactButton"
-                    ><i class="fa-solid fa-address-book"></i> Contacto</a>
+                    ><i class="fa-solid fa-address-book"></i> Contacto</a
+                  >
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -54,24 +55,35 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                  <!-- SUBMENUS -->
-                    <i class="fa-solid fa-layer-group"></i> Categoria</a>
+                    <!-- SUBMENUS -->
+                    <i class="fa-solid fa-layer-group"></i> Categoria</a
+                  >
                   <ul class="dropdown-menu" aria-labelledby="categoriaDropdown">
                     <li>
                       <a class="dropdown-item" href="#" data-category="Todos"
-                        ><i class="fa-solid fa-film"></i> Todos</a>
+                        ><i class="fa-solid fa-film"></i> Todos</a
+                      >
                     </li>
                     <li>
                       <a class="dropdown-item" href="#" data-category="Accion"
-                        ><i class="fa-solid fa-gun"></i> Acción</a>
+                        ><i class="fa-solid fa-gun"></i> Acción</a
+                      >
                     </li>
                     <li>
                       <a class="dropdown-item" href="#" data-category="Comedia"
-                        ><i class="fa-solid fa-face-grin-squint-tears"></i> Comedia</a>
+                        ><i class="fa-solid fa-face-grin-squint-tears"></i>
+                        Comedia</a
+                      >
                     </li>
                     <li>
                       <a class="dropdown-item" href="#" data-category="Romance"
-                        ><i class="fa-solid fa-heart"></i> Romance</a>
+                        ><i class="fa-solid fa-heart"></i> Romance</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="Romance"
+                        ><i class="fa-solid fa-masks-theater"></i> Drama</a
+                      >
                     </li>
                   </ul>
                 </li>
@@ -80,78 +92,78 @@
           </div>
         </nav>
       </div>
-      
+
       <!-- CARRUSEL DE IMAGENES -->
-    <div class="contcarrusel">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide custom-carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="/images/Deadpool.jpg"
-              class="d-block w-100"
-              alt="Deadpool-3"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/garfield 2024.jpg"
-              class="d-block w-100"
-              alt="Garfield"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/Mi villano favorito.jpg"
-              class="d-block w-100"
-              alt="Mi-Villano-Favorito-4"
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
+      <div class="contcarrusel">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide custom-carousel"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/images/Deadpool.jpg"
+                class="d-block w-100"
+                alt="Deadpool-3"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/images/garfield 2024.jpg"
+                class="d-block w-100"
+                alt="Garfield"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/images/Mi villano favorito.jpg"
+                class="d-block w-100"
+                alt="Mi-Villano-Favorito-4"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-    </div>
 
       <!-- PAGINACION -->
       <div id="movies-container" class="movies-container"></div>
@@ -186,7 +198,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    
+
     <!-- conexión de los scripts -->
     <script src="/scripts/main.js"></script>
     <script src="scripts/BD-Movies.js"></script>
