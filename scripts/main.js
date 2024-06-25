@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     movieElement.innerHTML = `
             <img src="${movie.image}" alt="${movie.title}">
             <h2>${movie.title}</h2>
-            <p>${movie.description}</p>
-        `;
+            <p>${movie.description}</p>`;
 
     moviesContainer.appendChild(movieElement);
   });

@@ -150,3 +150,4 @@ const movies = [
     description: "Animación, Aventura, Drama",
   },
 ];
+
