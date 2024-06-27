@@ -78,7 +78,7 @@ header {
 /* tamaño del carrusel */
 .custom-carousel {
   max-width: 800px; 
-  margin: 0 auto; /* Centra el carrusel horizontalmente */
+  margin: 0 auto;
 }
 
 .custom-carousel .carousel-item img {
@@ -89,4 +89,78 @@ header {
 
 .carousel-inner{
   border-radius: 20px;
+}
+
+.Trailer{
+  font-size: 3rem; 
+  display: block;
+  justify-content: center; 
+  color: #222; 
+}
+article {
+  background-color: #222;
+  width: calc(100vw - 60px);
+  margin: 30px;
+  border-radius: 10px;
+  color: #f0f0f0;
+  overflow: hidden; 
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 60px;
+  align-items: center;
+  
+}
+
+.video {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #111;
+}
+
+.video video{
+  width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.info {
+  flex: 2;
+  max-width: 700px;
+  
+}
+
+.Titulo {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.Subtitulo {
+  font-size: 18px;
+  color: gray;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.Sinopsis p {
+  margin: 0;
+}
+
+footer .copy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #222;
+  color: white;
+  margin-top: auto;
+  align-items: center;
 }
