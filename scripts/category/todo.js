@@ -1,20 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const moviesContainer = document.getElementById("movies-container");
-
-  movies.forEach((movie) => {
-    if (movie.description.toLowerCase().includes("acción")) {
-      const movieElement = document.createElement("div");
-      movieElement.classList.add("movie");
-
-      movieElement.innerHTML = `
-          <img src="${movie.image}" alt="${movie.title}">
-          <h2>${movie.title}</h2>
-          <p>${movie.description}</p>`;
-
-      moviesContainer.appendChild(movieElement); // Mover esta línea dentro del bloque if
-    }
+// Funcionalidad para abrir "Home" en categoría
+const homeButton = document.getElementById("home-boton");
+if (homeButton) {
+  homeButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.href = "../index.html";
   });
-});
+}
+
+// Funcionalidad para abrir "Contacto" el formulario.
+const contactoButton = document.getElementById("contacto-boton");
+if (contactoButton) {
+  contactoButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.href = "../form.html";
+  });
+}
 
 // Funcionalidades para usar los botones de la barra de navegación
 
@@ -36,21 +36,12 @@ if (volverAtras) {
   });
 }
 
-// Funcionalidad para abrir "Home" en categoría
-const homeButton = document.getElementById("home-boton");
-if (homeButton) {
-  homeButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    window.location.href = "./../index.html";
-  });
-}
-
 // Funcionalidad para abrir "todo" en categoría
 const todoButton = document.getElementById("category-todo");
 if (todoButton) {
   todoButton.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "../../category/todo.html";
+    window.location.href = "./../category/todo.html";
   });
 }
 
@@ -59,7 +50,7 @@ const accionButton = document.getElementById("category-accion");
 if (accionButton) {
   accionButton.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "../../category/accion.html";
+    window.location.href = "./../category/accion.html";
   });
 }
 
@@ -68,7 +59,7 @@ const comediaButton = document.getElementById("category-comedia");
 if (comediaButton) {
   comediaButton.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "../../category/comedia.html";
+    window.location.href = "./../category/comedia.html";
   });
 }
 
@@ -77,7 +68,7 @@ const dramaButton = document.getElementById("category-drama");
 if (dramaButton) {
   dramaButton.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "../../category/drama.html";
+    window.location.href = "./../category/drama.html";
   });
 }
 
@@ -86,6 +77,6 @@ const romanceButton = document.getElementById("category-romance");
 if (romanceButton) {
   romanceButton.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "../../category/romance.html";
+    window.location.href = "./../category/romance.html";
   });
 }

@@ -50,7 +50,7 @@ const todoButton = document.getElementById("category-todo");
 if (todoButton) {
   todoButton.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "/category/todo.html";
+    window.location.href = "./../category/todo.html";
   });
 }
 
@@ -59,7 +59,7 @@ const accionButton = document.getElementById("category-accion");
 if (accionButton) {
   accionButton.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "/category/accion.html";
+    window.location.href = "./../category/accion.html";
   });
 }
 
@@ -68,7 +68,7 @@ const comediaButton = document.getElementById("category-comedia");
 if (comediaButton) {
   comediaButton.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "/category/comedia.html";
+    window.location.href = "./../category/comedia.html";
   });
 }
 
@@ -77,7 +77,7 @@ const dramaButton = document.getElementById("category-drama");
 if (dramaButton) {
   dramaButton.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "/category/drama.html";
+    window.location.href = "./../category/drama.html";
   });
 }
 
@@ -86,6 +86,6 @@ const romanceButton = document.getElementById("category-romance");
 if (romanceButton) {
   romanceButton.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "/category/romance.html";
+    window.location.href = "./../category/romance.html";
   });
 }
